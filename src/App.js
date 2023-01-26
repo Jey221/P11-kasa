@@ -4,12 +4,12 @@ import Home from './pages/Home.js';
 import APropos from './pages/APropos';
 import Logement from './pages/Logement';
 import Erreur from './pages/Erreur';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/APropos" element={<APropos />} />
