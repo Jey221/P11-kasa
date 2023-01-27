@@ -1,3 +1,4 @@
+// mise en place du Footer
 import React from 'react';
 import styles from '../style/Footer.module.css';
 

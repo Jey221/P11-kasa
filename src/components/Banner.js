@@ -1,3 +1,4 @@
+// mise en place de la bannière
 import React from 'react';
 import styles from '../style/Banner.module.css';
 
