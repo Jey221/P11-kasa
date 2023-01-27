@@ -2,9 +2,10 @@
 import React from 'react';
 import styles from '../style/Card.module.css';
 import { Link } from 'react-router-dom';
-/* import { getDataFromJSON, getData } from './data';
+import { getDataFromJSON } from './data';
 
-console.log(getData);
+console.log(getDataFromJSON());
+/*console.log(getData);
 console.log(getDataFromJSON);
 async function getInfos() {
   const data = await getData();
@@ -15,7 +16,7 @@ async function getInfos() {
 console.log(getInfos);
 */
 
-export default function Card(data, infos) {
+export default function Card() {
   return (
     <div className={styles.card}>
       <div>
