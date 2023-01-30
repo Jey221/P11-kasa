@@ -2,11 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #8080806b;
+  background-color: rgb(246, 246, 246, 1);
   width: 94%;
   border-radius: 10px;
   margin: auto;
   margin-top: 2%;
+  margin-bottom: 1%;
   padding-top: 3%;
 }
 .gallery a {
