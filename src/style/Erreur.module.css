@@ -1,0 +1,16 @@
+.errorPage {
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.errorPage h1 {
+  font-size: 288px;
+  color: rgba(255, 96, 96, 1);
+  margin: 0;
+}
+.errorPage h2 {
+  color: rgba(255, 96, 96, 1);
+  margin-bottom: 13%;
+}
+.errorPage a {
+  color: rgba(255, 96, 96, 1);
+}
