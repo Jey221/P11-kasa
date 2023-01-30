@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <div>
       <Banner />
-      <h1>Accueil Kasa</h1>
       <Card />
     </div>
   );

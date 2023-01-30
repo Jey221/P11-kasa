@@ -1,4 +1,14 @@
 .links {
-  color: red;
-  margin-left: 2%;
+  color: rgba(255, 96, 96, 1);
+  text-decoration: none;
+}
+.links:focus {
+  text-decoration: underline;
+}
+
+.navHeader {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 15%;
 }

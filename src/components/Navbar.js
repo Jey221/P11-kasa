@@ -5,12 +5,12 @@ import styles from '../style/Navbar.module.css';
 
 export default function Navbar() {
   return (
-    <nav>
+    <nav className={styles.navHeader}>
       <Link to="/" className={styles.links}>
         Accueil
       </Link>
       <Link to="/APropos" className={styles.links}>
-        À Propos
+        A Propos
       </Link>
     </nav>
   );

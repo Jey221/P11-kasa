@@ -2,27 +2,28 @@
 import React from 'react';
 import styles from '../style/Card.module.css';
 import { Link } from 'react-router-dom';
-import { getDataFromJSON } from './data';
-
-console.log(getDataFromJSON());
-/*console.log(getData);
-console.log(getDataFromJSON);
-async function getInfos() {
-  const data = await getData();
-  const infos = await data;
-
-  return infos;
-}
-console.log(getInfos);
-*/
+import Datas from '../data/data.json';
 
 export default function Card() {
   return (
-    <div className={styles.card}>
-      <div>
-        <Link to="/Logement/c67ab8a7">Card 1</Link>
-      </div>
-      <div>
+    <div className={styles.gallery}>
+      {Datas.map((data) => {
+        return (
+          <div className={styles.logement} key={data.id}>
+            <Link to="/Logement/c67ab8a7">
+              <div className={styles.card}>
+                <p>{data.title}</p>
+              </div>
+            </Link>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+/**
+ *       <div>
         <Link to="/Logement/b9123946">Card 2</Link>
       </div>
       <div>
@@ -50,5 +51,5 @@ export default function Card() {
         <Link to="/Logement/d60ca600">Card 10</Link>
       </div>
     </div>
-  );
-}
+
+ */
