@@ -6,13 +6,14 @@ import Datas from '../data/data.json';
 
 export default function Card() {
   return (
+    // mise en place des cards alimentés par le json via la méthode .map
     <div className={styles.gallery}>
       {Datas.map((data) => {
         return (
           <div className={styles.logement} key={data.id}>
             <Link to="/Logement/c67ab8a7">
               <div className={styles.card}>
-                <p>{data.title}</p>
+                <h2>{data.title}</h2>
               </div>
             </Link>
           </div>

@@ -1,3 +1,4 @@
+// mise  en place de la page logement// WIP
 import React from 'react';
 import { useParams } from 'react-router-dom';
 

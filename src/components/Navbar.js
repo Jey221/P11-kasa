@@ -12,6 +12,6 @@ export default function Navbar() {
       <Link to="/APropos" className={styles.links}>
         A Propos
       </Link>
-    </nav>
+    </nav> // liens pour navigation sur l'appli
   );
 }

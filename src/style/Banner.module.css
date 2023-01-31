@@ -3,7 +3,7 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 163px;
+  height: 212px;
   border-radius: 25px;
   margin: auto;
   background: url(../assets/IMG.png);
@@ -11,7 +11,21 @@
   background-size: 100%;
   color: white;
 }
-.banner p {
+.banner2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 212px;
+  border-radius: 25px;
+  margin: auto;
+  background: url(../assets/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png);
+  background-position: 0% 87%;
+  background-size: 100%;
+  color: white;
+}
+
+.banner h1 {
   font-size: 40px;
   color: white;
 }

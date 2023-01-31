@@ -1,3 +1,4 @@
+// mise en place de la page d'erreur 404
 import React from 'react';
 import styles from '../style/Erreur.module.css';
 import { Link } from 'react-router-dom';

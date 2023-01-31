@@ -1,3 +1,4 @@
+// mise en place de la page d'accueil
 import React from 'react';
 import Banner from '../components/Banner';
 import Card from '../components/Card';
