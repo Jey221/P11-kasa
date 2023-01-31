@@ -1,0 +1,31 @@
+.collapseList {
+  background-color: gray;
+}
+.collapse {
+  background-color: greenyellow;
+  margin: auto;
+  width: 1023px;
+  border-radius: 5px;
+}
+.collapseClose {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.collapseOpen {
+  display: none;
+  background-color: blue;
+  text-align: start;
+  padding: 0 15px;
+}
+.collapseOpen p {
+  margin: 0;
+}
+.iconDownFiability {
+  color: yellow;
+}
+.iconUpFiability {
+  color: green;
+  display: none;
+}
