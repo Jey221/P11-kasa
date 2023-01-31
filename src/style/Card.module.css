@@ -16,6 +16,9 @@
 .logement {
   margin: 10px;
 }
+h2 {
+  font-size: 18px;
+}
 .card {
   display: flex;
   align-items: flex-end;
