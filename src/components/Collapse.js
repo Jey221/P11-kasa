@@ -4,11 +4,14 @@ import styles from '../style/Collapse.module.css';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function openCloseCollapse() {
+const textFiability = document.getElementById('textFiability');
+const textRespect = document.getElementById('textRespect');
+const textService = document.getElementById('textService');
+const textResponsability = document.getElementById('textResponsability');
+
+function openCloseCollapse1() {
   const iconOpen = document.getElementById('iconOpen');
   const iconClose = document.getElementById('iconClose');
-  const textFiability = document.getElementById('textFiability');
-  console.log(iconClose);
   // eslint-disable-next-line no-lone-blocks
   if (window.getComputedStyle(textFiability).display === 'none') {
     textFiability.style.setProperty('display', 'block');
@@ -20,12 +23,54 @@ function openCloseCollapse() {
     iconOpen.style.setProperty('display', 'none');
   }
 }
+function openCloseCollapse2() {
+  const iconOpen = document.getElementById('iconOpen2');
+  const iconClose = document.getElementById('iconClose2');
+  // eslint-disable-next-line no-lone-blocks
+  if (window.getComputedStyle(textRespect).display === 'none') {
+    textRespect.style.setProperty('display', 'block');
+    iconClose.style.setProperty('display', 'none');
+    iconOpen.style.setProperty('display', 'block');
+  } else {
+    textRespect.style.setProperty('display', 'none');
+    iconClose.style.setProperty('display', 'block');
+    iconOpen.style.setProperty('display', 'none');
+  }
+}
+function openCloseCollapse3() {
+  const iconOpen = document.getElementById('iconOpen3');
+  const iconClose = document.getElementById('iconClose3');
+  // eslint-disable-next-line no-lone-blocks
+  if (window.getComputedStyle(textService).display === 'none') {
+    textService.style.setProperty('display', 'block');
+    iconClose.style.setProperty('display', 'none');
+    iconOpen.style.setProperty('display', 'block');
+  } else {
+    textService.style.setProperty('display', 'none');
+    iconClose.style.setProperty('display', 'block');
+    iconOpen.style.setProperty('display', 'none');
+  }
+}
+function openCloseCollapse4() {
+  const iconOpen = document.getElementById('iconOpen4');
+  const iconClose = document.getElementById('iconClose4');
+  // eslint-disable-next-line no-lone-blocks
+  if (window.getComputedStyle(textResponsability).display === 'none') {
+    textResponsability.style.setProperty('display', 'block');
+    iconClose.style.setProperty('display', 'none');
+    iconOpen.style.setProperty('display', 'block');
+  } else {
+    textResponsability.style.setProperty('display', 'none');
+    iconClose.style.setProperty('display', 'block');
+    iconOpen.style.setProperty('display', 'none');
+  }
+}
 
 export default function Collapse() {
   return (
     <div className={styles.collapseList}>
       <div className={styles.collapse}>
-        <div className={styles.collapseClose} onClick={openCloseCollapse}>
+        <div className={styles.collapseClose} onClick={openCloseCollapse1}>
           <h2>Fiabilité</h2>
           <span className={styles.icons}>
             <FontAwesomeIcon
@@ -50,20 +95,87 @@ export default function Collapse() {
           </div>
         </div>
       </div>
-      <h3>Respect</h3>
-      <h3>Service</h3>
-      <h3>Responsabilité</h3>
+      <div className={styles.collapse}>
+        <div className={styles.collapseClose} onClick={openCloseCollapse2}>
+          <h2>Respect</h2>
+          <span className={styles.icons}>
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              id="iconClose2"
+              className={styles.iconDownRespect}
+            />
+            <FontAwesomeIcon
+              icon={faChevronUp}
+              id="iconOpen2"
+              className={styles.iconUpRespect}
+            />
+          </span>
+        </div>
+        <div className={styles.collapseOpen} id="textRespect">
+          <div>
+            <p>
+              La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
+              comportement discriminatoire ou de perturbation du voisinage
+              entraînera une exclusion de notre plateforme.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={styles.collapse}>
+        <div className={styles.collapseClose} onClick={openCloseCollapse3}>
+          <h2>Service</h2>
+          <span className={styles.icons}>
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              id="iconClose3"
+              className={styles.iconDownRespect}
+            />
+            <FontAwesomeIcon
+              icon={faChevronUp}
+              id="iconOpen3"
+              className={styles.iconUpRespect}
+            />
+          </span>
+        </div>
+        <div className={styles.collapseOpen} id="textService">
+          <div>
+            <p>
+              Nos équipes se tiennent à votre disposition pour vous fournir une
+              expérience parfaite. N'hésitez pas à nous contacter si vous avez
+              la moindre question.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={styles.collapse}>
+        <div className={styles.collapseClose} onClick={openCloseCollapse4}>
+          <h2>Responsabilité</h2>
+          <span className={styles.icons}>
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              id="iconClose4"
+              className={styles.iconDownRespect}
+            />
+            <FontAwesomeIcon
+              icon={faChevronUp}
+              id="iconOpen4"
+              className={styles.iconUpRespect}
+            />
+          </span>
+        </div>
+        <div className={styles.collapseOpen} id="textResponsability">
+          <div>
+            <p>
+              La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
+              pour les voyageurs, chaque logement correspond aux critères de
+              sécurité établis par nos services. En laissant une note aussi bien
+              à l'hôte qu'au locataire, cela permet à nos équipes de vérifier
+              que les standards sont bien respectés. Nous organisons également
+              des ateliers sur la sécurité domestique pour nos hôtes.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
-
-/* {
-  window.getComputedStyle(textFiability).display === 'none'
-    ? textFiability.style.setProperty('display', 'block') &&
-      iconClose.style.setProperty('display', 'none') &&
-      iconOpen.style.setProperty('display', 'block')
-    : textFiability.style.setProperty('display', 'none') &&
-      iconClose.style.setProperty('display', 'block') &&
-      iconOpen.style.setProperty('display', 'none');
-}
- */
