@@ -4,12 +4,9 @@ import styles from '../style/Collapse.module.css';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const textFiability = document.getElementById('textFiability');
-const textRespect = document.getElementById('textRespect');
-const textService = document.getElementById('textService');
-const textResponsability = document.getElementById('textResponsability');
-
+// mise en place d'une fonction pour l'ouverture du collapse "fiabilité"
 function openCloseCollapse1() {
+  const textFiability = document.getElementById('textFiability');
   const iconOpen = document.getElementById('iconOpen');
   const iconClose = document.getElementById('iconClose');
   // eslint-disable-next-line no-lone-blocks
@@ -23,7 +20,10 @@ function openCloseCollapse1() {
     iconOpen.style.setProperty('display', 'none');
   }
 }
+
+// mise en place d'une fonction pour l'ouverture du collapse "respect"
 function openCloseCollapse2() {
+  const textRespect = document.getElementById('textRespect');
   const iconOpen = document.getElementById('iconOpen2');
   const iconClose = document.getElementById('iconClose2');
   // eslint-disable-next-line no-lone-blocks
@@ -37,7 +37,10 @@ function openCloseCollapse2() {
     iconOpen.style.setProperty('display', 'none');
   }
 }
+
+// mise en place d'une fonction pour l'ouverture du collapse "service"
 function openCloseCollapse3() {
+  const textService = document.getElementById('textService');
   const iconOpen = document.getElementById('iconOpen3');
   const iconClose = document.getElementById('iconClose3');
   // eslint-disable-next-line no-lone-blocks
@@ -51,7 +54,9 @@ function openCloseCollapse3() {
     iconOpen.style.setProperty('display', 'none');
   }
 }
+// mise en place d'une fonction pour l'ouverture du collapse "responsabilité"
 function openCloseCollapse4() {
+  const textResponsability = document.getElementById('textResponsability');
   const iconOpen = document.getElementById('iconOpen4');
   const iconClose = document.getElementById('iconClose4');
   // eslint-disable-next-line no-lone-blocks
