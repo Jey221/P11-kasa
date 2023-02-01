@@ -7,7 +7,6 @@ export default function APropos() {
   return (
     <div>
       <Banner />
-      <h1>À Propos</h1>
       <Collapse />
     </div>
   );

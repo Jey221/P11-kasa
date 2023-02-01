@@ -1,31 +1,40 @@
-.collapseList {
-  background-color: gray;
-}
 .collapse {
-  background-color: greenyellow;
-  margin: auto;
+  margin: 1% auto;
   width: 1023px;
   border-radius: 5px;
 }
 .collapseClose {
-  background-color: red;
+  background: rgba(255, 96, 96, 1);
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 5px;
+  position: sticky;
+}
+.collapseClose h2 {
+  color: white;
+  font-size: 24px;
+  margin: 1%;
 }
 .collapseOpen {
   display: none;
-  background-color: blue;
+  background: rgba(246, 246, 246, 1);
   text-align: start;
-  padding: 0 15px;
+  padding: 34px 15px;
+  border-radius: 5px;
+  margin-top: -1%;
 }
 .collapseOpen p {
+  color: rgba(255, 96, 96, 1);
   margin: 0;
+  font-size: 24px;
+  line-height: 150%;
 }
-.iconDownFiability {
-  color: yellow;
+.icons {
+  color: white;
 }
 .iconUpFiability {
-  color: green;
   display: none;
 }

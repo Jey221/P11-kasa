@@ -26,7 +26,7 @@ export default function Collapse() {
     <div className={styles.collapseList}>
       <div className={styles.collapse}>
         <div className={styles.collapseClose} onClick={openCloseCollapse}>
-          <span>Fiabilité</span>
+          <h2>Fiabilité</h2>
           <span className={styles.icons}>
             <FontAwesomeIcon
               icon={faChevronDown}
