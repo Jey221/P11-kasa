@@ -1,5 +1,5 @@
 // mise en place du Footer
-import React from 'react';
+import React, { useState } from 'react';
 import Datas from '../data/data.json';
 import styles from '../style/Carrousel.module.css';
 import {
@@ -8,11 +8,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function nextButton() {
-  console.log('next');
-}
-
 const Slideshow = () => {
+  const [current, setCurrent] = useState(0);
   return (
     <div className={styles.containerSlide}>
       {Datas.filter(
@@ -21,20 +18,27 @@ const Slideshow = () => {
           window.location.href.split('http://localhost:3000/Logement/').join('')
       ).map((data) => {
         function prevButton() {
+          const length = data.pictures.length;
+          setCurrent(current === 0 ? length - 1 : current - 1);
           console.log('prev');
-          console.log(data.pictures[0]);
         }
+        function nextButton() {
+          const length = data.pictures.length;
+          setCurrent(current === length - 1 ? 0 : current + 1);
+          console.log('next');
+        }
+        console.log(current);
         return (
-          <div className="eachSlide">
-            <button className="arrowLeft" onClick={prevButton}>
+          <div className={styles.eachSlide}>
+            <nav className={styles.arrowLeft} onClick={prevButton}>
               <FontAwesomeIcon icon={faChevronLeft} />
-            </button>
-            <div className="medias">
-              <img src={data.pictures[0]} alt="" />
+            </nav>
+            <div className={styles.medias}>
+              <img src={data.pictures[current]} alt={data.title} />
             </div>
-            <button className="arrowRight" onClick={nextButton}>
+            <nav className={styles.arrowRight} onClick={nextButton}>
               <FontAwesomeIcon icon={faChevronRight} />
-            </button>
+            </nav>
           </div>
         );
       })}

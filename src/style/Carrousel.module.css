@@ -1,9 +1,37 @@
 .containerSlide {
   margin: 87px auto;
-  width: 90%;
+  width: 99%;
   height: 415px;
 }
-
-.containerSlide img {
+.eachSlide {
+  display: flex;
+  justify-content: center;
   height: 415px;
+  align-items: center;
+  overflow: hidden;
+}
+.arrowLeft {
+  position: relative;
+  left: 75px;
+  font-size: 76px;
+  color: white;
+}
+.arrowRight {
+  position: relative;
+  right: 75px;
+  font-size: 76px;
+  color: white;
+}
+.medias {
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.medias img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  height: 415px;
+  object-position: center;
 }
