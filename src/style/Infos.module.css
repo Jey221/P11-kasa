@@ -2,18 +2,28 @@
 .infosZone {
   display: flex;
   justify-content: space-between;
-  background-color: gray;
+  padding: 1% 4%;
 }
 /* BLOC INFO LOC */
 .blocLeft {
-  background-color: blue;
   text-align: start;
 }
 .titleZone {
   color: rgb(255, 96, 96, 1);
 }
+.titleZone h1 {
+  font-weight: 500;
+  margin-top: 0%;
+  margin-bottom: 1%;
+}
 .locationZone {
   color: rgb(255, 96, 96, 1);
+}
+.locationZone {
+  margin-top: 0%;
+}
+.locationZone h2 {
+  font-weight: 500;
 }
 .tagZone {
   display: flex;
@@ -37,11 +47,32 @@
   padding: 2%;
 }
 /* BLOC HOST & RATING */
-.blocRight {
-  background-color: red;
-}
 /* BLOC HOST */
-/* BLOC RATING */
-.starOk {
-  color: yellow;
+.hostZone {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+.name {
+  width: 114px;
+}
+.name h2 {
+  color: rgb(255, 96, 96, 1);
+  font-weight: 200;
+  font-size: 24px;
+  margin: 0;
+  text-align: end;
+}
+.image img {
+  border-radius: 50%;
+  width: 70px;
+}
+/* BLOC RANKING */
+.ratingZone {
+  margin-top: 8%;
+}
+.stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

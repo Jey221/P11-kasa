@@ -29,10 +29,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* ETOILE RANKING */
-.starYesC {
-  color: rgba(255, 96, 96, 1);
-}
-.starNo {
-  color: rgba(227, 227, 227, 1);
-}
