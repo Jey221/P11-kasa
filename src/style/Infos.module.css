@@ -1,0 +1,42 @@
+/* ZONE INFOS */
+.infosZone {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+}
+/* BLOC INFO LOC */
+.blocLeft {
+  background-color: blue;
+  text-align: start;
+}
+.titleZone {
+  color: rgb(255, 96, 96, 1);
+}
+.locationZone {
+  color: rgb(255, 96, 96, 1);
+}
+.tagZone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2%;
+}
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(255, 96, 96, 1);
+  width: 121px;
+  height: 25px;
+  color: white;
+  border-radius: 10px;
+}
+.tag p {
+  margin: 0%;
+  font-size: 12px;
+  padding: 2%;
+}
+/* BLOC HOST & RATING */
+.blocRight {
+  background-color: red;
+}

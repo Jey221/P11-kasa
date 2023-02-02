@@ -1,8 +1,9 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0% 2%;
+  align-items: flex-end;
+  padding: 1% 4%;
 }
 .header img {
-  margin: 1%;
+  margin: 1% 0%;
 }

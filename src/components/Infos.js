@@ -1,7 +1,47 @@
 // mise en place de la zone infos
 import React from 'react';
-import styles from '../style/Footer.module.css';
+import styles from '../style/Infos.module.css';
+import Datas from '../data/data.json';
+import Tags from './Tags.js';
 
-export default function infos() {
-  return <div className={styles.infos}></div>;
+export default function Informations() {
+  return (
+    <div>
+      {Datas.filter(
+        // filtre sur l'id en fonction de l'url
+        (data) =>
+          data.id ===
+          window.location.href.split('http://localhost:3000/Logement/').join('')
+      ).map((data) => {
+        return (
+          <div className={styles.infosZone}>
+            <div className={styles.blocLeft}>
+              <div className={styles.titleZone}>
+                <h1>{data.title}</h1>
+              </div>
+              <div className={styles.locationZone}>
+                <h2>{data.location}</h2>
+              </div>
+              <div className="tags">
+                <Tags />
+              </div>
+            </div>
+            <div className={styles.blocRight}>
+              <div className={styles.hostZone}>
+                <div className={styles.name}>
+                  <h2>{data.host.name}</h2>
+                </div>
+                <div className={styles.image}>
+                  <img src={data.host.picture} alt={data.host.name} />
+                </div>
+              </div>
+              <div className={styles.ratingZone}>
+                <span>{data.rating}</span>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
