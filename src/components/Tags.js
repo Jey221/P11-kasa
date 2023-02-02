@@ -1,4 +1,4 @@
-// mise  en place de la page logement// WIP
+// mise en place du composant Tags// WIP
 import React from 'react';
 import styles from '../style/Infos.module.css';
 import Datas from '../data/data.json';

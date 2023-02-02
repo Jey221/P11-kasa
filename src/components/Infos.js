@@ -3,6 +3,7 @@ import React from 'react';
 import styles from '../style/Infos.module.css';
 import Datas from '../data/data.json';
 import Tags from './Tags.js';
+import Ratings from './Rating.js';
 
 export default function Informations() {
   return (
@@ -35,8 +36,8 @@ export default function Informations() {
                   <img src={data.host.picture} alt={data.host.name} />
                 </div>
               </div>
-              <div className={styles.ratingZone}>
-                <span>{data.rating}</span>
+              <div className="rating">
+                <Ratings />
               </div>
             </div>
           </div>
