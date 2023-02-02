@@ -1,10 +1,26 @@
-/* COLLAPSE A PROPOS*/
+/* COLLAPSE LOGEMENT*/
 .collapseList {
   margin-bottom: 15%;
-  margin-top: 5%;
+  margin-top: 1%;
+  padding: 0% 4%;
+}
+.collapseLoc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4%;
+}
+.collapseUp {
+  width: 520px;
+  border-radius: 5px;
+}
+.collapseUp .collapseClose h2 {
+  font-size: 18px;
+  font-weight: 100;
+  padding: 1%;
 }
 .collapse {
-  margin: 1% auto;
+  margin: 3% 0;
   width: 1023px;
   border-radius: 5px;
 }
@@ -34,21 +50,20 @@
 .collapseOpen p {
   color: rgba(255, 96, 96, 1);
   margin: 0;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 150%;
 }
+.collapseOpen ul {
+  color: rgba(255, 96, 96, 1);
+  margin: 0;
+  font-size: 18px;
+  line-height: 150%;
+  list-style-type: none;
+}
+
 .icons {
   color: white;
 }
-.iconUpFiability {
-  display: none;
-}
-.iconUpRespect {
-  display: none;
-}
-.iconUpService {
-  display: none;
-}
-.iconUpResponsability {
+.iconUp {
   display: none;
 }

@@ -66,5 +66,4 @@ const rat = [
   starLevel4,
   starLevel5,
 ];
-console.log(rat);
 export { rat };
