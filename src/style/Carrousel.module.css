@@ -35,3 +35,11 @@
   height: 415px;
   object-position: center;
 }
+.index {
+  position: absolute;
+  bottom: 435px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  top: 535px;
+}

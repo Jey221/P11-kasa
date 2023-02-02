@@ -11,10 +11,12 @@ function openCloseCollapse1() {
   const iconClose = document.getElementById('iconClose');
   // eslint-disable-next-line no-lone-blocks
   if (window.getComputedStyle(textFiability).display === 'none') {
+    // ouverture
     textFiability.style.setProperty('display', 'block');
     iconClose.style.setProperty('display', 'none');
     iconOpen.style.setProperty('display', 'block');
   } else {
+    // fermeture
     textFiability.style.setProperty('display', 'none');
     iconClose.style.setProperty('display', 'block');
     iconOpen.style.setProperty('display', 'none');
@@ -28,10 +30,12 @@ function openCloseCollapse2() {
   const iconClose = document.getElementById('iconClose2');
   // eslint-disable-next-line no-lone-blocks
   if (window.getComputedStyle(textRespect).display === 'none') {
+    // ouverture
     textRespect.style.setProperty('display', 'block');
     iconClose.style.setProperty('display', 'none');
     iconOpen.style.setProperty('display', 'block');
   } else {
+    // fermeture
     textRespect.style.setProperty('display', 'none');
     iconClose.style.setProperty('display', 'block');
     iconOpen.style.setProperty('display', 'none');
@@ -45,10 +49,12 @@ function openCloseCollapse3() {
   const iconClose = document.getElementById('iconClose3');
   // eslint-disable-next-line no-lone-blocks
   if (window.getComputedStyle(textService).display === 'none') {
+    // ouverture
     textService.style.setProperty('display', 'block');
     iconClose.style.setProperty('display', 'none');
     iconOpen.style.setProperty('display', 'block');
   } else {
+    // fermeture
     textService.style.setProperty('display', 'none');
     iconClose.style.setProperty('display', 'block');
     iconOpen.style.setProperty('display', 'none');
@@ -61,10 +67,12 @@ function openCloseCollapse4() {
   const iconClose = document.getElementById('iconClose4');
   // eslint-disable-next-line no-lone-blocks
   if (window.getComputedStyle(textResponsability).display === 'none') {
+    // ouverture
     textResponsability.style.setProperty('display', 'block');
     iconClose.style.setProperty('display', 'none');
     iconOpen.style.setProperty('display', 'block');
   } else {
+    // fermeture
     textResponsability.style.setProperty('display', 'none');
     iconClose.style.setProperty('display', 'block');
     iconOpen.style.setProperty('display', 'none');
