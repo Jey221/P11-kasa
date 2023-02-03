@@ -18,6 +18,10 @@
 }
 .logement h2 {
   font-size: 18px;
+  position: absolute;
+  max-width: 340px;
+  text-align: left;
+  padding: 0% 1%;
 }
 .card {
   display: flex;
@@ -25,10 +29,17 @@
   color: white;
   width: 340px;
   height: 340px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 96, 96, 1) 0%,
-    rgba(0, 0, 0, 0.7) 100%
-  );
   border-radius: 10px;
+  background-position: center;
+  opacity: 0.5;
+}
+.cardBack {
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  background-position: center;
+  background: linear-gradient(181deg, rgb(255 255 255) 0%, rgb(0 0 0) 100%);
 }

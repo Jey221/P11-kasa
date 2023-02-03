@@ -9,10 +9,12 @@ export default function Card() {
     // mise en place des cards alimentés par le json via la méthode .map
     <div className={styles.gallery}>
       {Datas.map((data) => {
+        const myStyle = { backgroundImage: `url(${data.cover})` };
         return (
           <div className={styles.logement} key={data.id}>
             <Link to={`/Logement/${data.id}`}>
-              <div className={styles.card}>
+              <div className={styles.cardBack}>
+                <div className={styles.card} style={myStyle}></div>
                 <h2>{data.title}</h2>
               </div>
             </Link>
