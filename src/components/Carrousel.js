@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // fonction pour le carrousel
 const Slideshow = () => {
   const [current, setCurrent] = useState(0);
+  console.log(window.location.href);
   return (
     <div className={styles.containerSlide}>
       {Datas.filter(
@@ -24,13 +25,11 @@ const Slideshow = () => {
           //fonction pour le bouton précedent
           const length = data.pictures.length;
           setCurrent(current === 0 ? length - 1 : current - 1);
-          console.log('prev');
         }
         function nextButton() {
           //fonction pour le bouton suivant
           const length = data.pictures.length;
           setCurrent(current === length - 1 ? 0 : current + 1);
-          console.log('next');
         }
         return (
           // mise en place du jsx pour le carrousel
