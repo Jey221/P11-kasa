@@ -3,7 +3,7 @@ import React from 'react';
 import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
 
-export default function APropos() {
+export default function About() {
   return (
     <div>
       <Banner />

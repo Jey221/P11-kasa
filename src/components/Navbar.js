@@ -15,8 +15,8 @@ export default function Navbar() {
           Accueil
         </Link>
         <Link
-          to="/APropos"
-          className={location.pathname === '/APropos' ? 'active' : 'desactive'}
+          to="/About"
+          className={location.pathname === '/About' ? 'active' : 'desactive'}
         >
           A Propos
         </Link>
