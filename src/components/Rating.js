@@ -13,7 +13,7 @@ export default function Ratings() {
           window.location.href.split('http://localhost:3000/Logement/').join('')
       ).map((data) => {
         const rating = parseInt(data.rating);
-        return <div>{rat[rating]}</div>;
+        return <div key={data.id}>{rat[rating]}</div>;
       })}
     </div>
   );

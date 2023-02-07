@@ -15,7 +15,7 @@ export default function Informations() {
           window.location.href.split('http://localhost:3000/Logement/').join('')
       ).map((data) => {
         return (
-          <div className={styles.infosZone}>
+          <div className={styles.infosZone} key={data.id}>
             <div className={styles.blocLeft}>
               <div className={styles.titleZone}>
                 <h1>{data.title}</h1>

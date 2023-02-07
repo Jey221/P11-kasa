@@ -90,7 +90,7 @@ export default function CollapseLoc() {
           window.location.href.split('http://localhost:3000/Logement/').join('')
       ).map((data) => {
         return (
-          <div className={styles.collapseList}>
+          <div className={styles.collapseList} key={data.id}>
             <div className={styles.collapseLoc}>
               <div className={styles.collapseUp}>
                 <div
@@ -139,7 +139,7 @@ export default function CollapseLoc() {
                 <div className={styles.collapseOpen} id="textEquipements">
                   <ul>
                     {data.equipments.map((equipment) => {
-                      return <li>{equipment}</li>;
+                      return <li key={equipment}>{equipment}</li>;
                     })}
                   </ul>
                 </div>

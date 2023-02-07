@@ -1,7 +1,7 @@
 // mise en place de la page d'erreur 404
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styles from '../style/Erreur.module.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Erreur() {
   return (

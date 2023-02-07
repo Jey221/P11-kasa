@@ -13,7 +13,7 @@ export default function Tags() {
       ).map((data) => {
         return data.tags.map((tag) => {
           return (
-            <div className={styles.tag}>
+            <div className={styles.tag} key={tag}>
               <p>{tag}</p>
             </div>
           );

@@ -60,6 +60,7 @@ function openCloseCollapse3() {
     iconOpen.style.setProperty('display', 'none');
   }
 }
+
 // mise en place d'une fonction pour l'ouverture du collapse "responsabilité"
 function openCloseCollapse4() {
   const textResponsability = document.getElementById('textResponsability');
