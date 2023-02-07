@@ -6,27 +6,23 @@ import Informations from '../components/Infos';
 import Datas from '../data/data.json';
 import Erreur from './Erreur';
 
-console.log(
-  'fonction',
-  Datas.some((data) => {
-    if (
-      data.id ===
-      window.location.href.split('http://localhost:3000/Logement/').join('')
-    ) {
-      return (
-        <div>
-          <Slideshow />
-          <Informations />
-          <CollapseLoc />
-        </div>
-      );
-    }
-    return <Erreur />;
-  })
-);
-console.log(Datas);
-
 export default function Logement() {
+  const isfound = Datas.some((data) => {
+    if (
+      window.location.href.split('http://localhost:3000/Logement/').join('') ===
+      data.id
+    ) {
+      return true;
+    }
+    return false;
+  });
+  if (isfound === false) {
+    return (
+      <div>
+        <Erreur />
+      </div>
+    );
+  }
   return (
     <div>
       <Slideshow />
