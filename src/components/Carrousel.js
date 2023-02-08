@@ -37,7 +37,7 @@ const Slideshow = () => {
               <nav
                 className={styles.arrowLeft}
                 onClick={prevButton}
-                style={{ display: length <= 1 ? 'none' : 'block' }}
+                style={{ visibility: length <= 1 ? 'hidden' : '' }}
               >
                 <FontAwesomeIcon icon={faChevronLeft} />
               </nav>
@@ -54,7 +54,7 @@ const Slideshow = () => {
               <nav
                 className={styles.arrowRight}
                 onClick={nextButton}
-                style={{ display: length <= 1 ? 'none' : 'block' }}
+                style={{ visibility: length <= 1 ? 'hidden' : '' }}
               >
                 <FontAwesomeIcon icon={faChevronRight} />
               </nav>
