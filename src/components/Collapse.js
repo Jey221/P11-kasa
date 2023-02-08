@@ -1,15 +1,14 @@
-// mise en place des Collapses //WIP
+// mise en place des Collapses sur la page About
 import React from 'react';
 import styles from '../style/Collapse.module.css';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-// mise en place d'une fonction pour l'ouverture du collapse "fiabilité"
+// mise en place d'une fonction pour l'ouverture/fermeture du collapse "fiabilité"
 function openCloseCollapse1() {
   const textFiability = document.getElementById('textFiability');
   const iconOpen = document.getElementById('iconOpen');
   const iconClose = document.getElementById('iconClose');
-  // eslint-disable-next-line no-lone-blocks
   if (window.getComputedStyle(textFiability).display === 'none') {
     // ouverture
     textFiability.style.setProperty('display', 'block');
@@ -23,12 +22,11 @@ function openCloseCollapse1() {
   }
 }
 
-// mise en place d'une fonction pour l'ouverture du collapse "respect"
+// mise en place d'une fonction pour l'ouverture/fermeture du collapse "respect"
 function openCloseCollapse2() {
   const textRespect = document.getElementById('textRespect');
   const iconOpen = document.getElementById('iconOpen2');
   const iconClose = document.getElementById('iconClose2');
-  // eslint-disable-next-line no-lone-blocks
   if (window.getComputedStyle(textRespect).display === 'none') {
     // ouverture
     textRespect.style.setProperty('display', 'block');
@@ -42,12 +40,11 @@ function openCloseCollapse2() {
   }
 }
 
-// mise en place d'une fonction pour l'ouverture du collapse "service"
+// mise en place d'une fonction pour l'ouverture/fermeture du collapse "service"
 function openCloseCollapse3() {
   const textService = document.getElementById('textService');
   const iconOpen = document.getElementById('iconOpen3');
   const iconClose = document.getElementById('iconClose3');
-  // eslint-disable-next-line no-lone-blocks
   if (window.getComputedStyle(textService).display === 'none') {
     // ouverture
     textService.style.setProperty('display', 'block');
@@ -61,12 +58,11 @@ function openCloseCollapse3() {
   }
 }
 
-// mise en place d'une fonction pour l'ouverture du collapse "responsabilité"
+// mise en place d'une fonction pour l'ouverture/fermeture du collapse "responsabilité"
 function openCloseCollapse4() {
   const textResponsability = document.getElementById('textResponsability');
   const iconOpen = document.getElementById('iconOpen4');
   const iconClose = document.getElementById('iconClose4');
-  // eslint-disable-next-line no-lone-blocks
   if (window.getComputedStyle(textResponsability).display === 'none') {
     // ouverture
     textResponsability.style.setProperty('display', 'block');
@@ -79,7 +75,7 @@ function openCloseCollapse4() {
     iconOpen.style.setProperty('display', 'none');
   }
 }
-
+//création des collapses
 export default function Collapse() {
   return (
     <div className={styles.collapseList}>

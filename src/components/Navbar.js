@@ -2,7 +2,9 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+//création des liens de navigation dans le header
 export default function Navbar() {
+  //Hook pour localiser sur quelle page est l'utilisateur
   const location = useLocation();
   return (
     <div className="navigation">

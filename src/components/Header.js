@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import styles from '../style/Header.module.css';
 import logo from '../assets/LOGO.png';
 
+//création de l'entête
 export default function Header() {
   return (
     <div className={styles.header}>

@@ -58,7 +58,8 @@ const starLevel5 = (
   </span>
 );
 
-const rat = [
+//tableau des étoiles
+const star = [
   starLevel,
   starLevel1,
   starLevel2,
@@ -66,4 +67,5 @@ const rat = [
   starLevel4,
   starLevel5,
 ];
-export { rat };
+
+export { star };

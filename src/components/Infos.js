@@ -5,6 +5,7 @@ import Datas from '../data/data.json';
 import Tags from './Tags.js';
 import Ratings from './Rating.js';
 
+// création de la zone infos
 export default function Informations() {
   return (
     <div className={styles.informations}>
@@ -13,6 +14,7 @@ export default function Informations() {
         (data) =>
           data.id ===
           window.location.href.split('http://localhost:3000/Logement/').join('')
+        // map sur les datas filtrées
       ).map((data) => {
         return (
           <div className={styles.infosZone} key={data.id}>

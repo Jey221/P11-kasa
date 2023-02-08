@@ -1,4 +1,4 @@
-// mise  en place de la page logement// WIP
+// mise  en place de la page logement
 import React from 'react';
 import Slideshow from '../components/Carrousel';
 import CollapseLoc from '../components/CollapseLoc';
@@ -6,7 +6,9 @@ import Informations from '../components/Infos';
 import Datas from '../data/data.json';
 import Erreur from './Erreur';
 
+// création de la page Logement et récupération de différents composants
 export default function Logement() {
+  //vérification de l'id dans l'url en fonction des datas
   const isfound = Datas.some((data) => {
     if (
       window.location.href.split('http://localhost:3000/Logement/').join('') ===
@@ -16,6 +18,7 @@ export default function Logement() {
     }
     return false;
   });
+  // renvoi vers page logement si id existant ou renvoi vers page erreur
   if (isfound === false) {
     return (
       <div>
@@ -23,6 +26,7 @@ export default function Logement() {
       </div>
     );
   }
+  // création de la page Logement et récupération des composants Slideshow, Informations et CollapseLoc
   return (
     <div>
       <Slideshow />

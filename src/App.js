@@ -7,6 +7,8 @@ import Erreur from './pages/Erreur';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+// mise en place de l'application et des différentes routes
+// mise en place des composants Header et Footer présent sur l'ensemble de l'app
 function App() {
   return (
     <div className="App">
@@ -16,8 +18,6 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route exact path="/Logement/:idLogement" element={<Logement />} />
         <Route path="*" element={<Erreur />} />
-        {/*         <Route path={'/Logement/:!idLogement'} element={<Erreur />} />
-         */}{' '}
       </Routes>
       <Footer />
     </div>

@@ -1,11 +1,11 @@
-// mise en place des Collapses //WIP
+// mise en place des Collapses sur la page Logement
 import React from 'react';
 import styles from '../style/CollapseLoc.module.css';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Datas from '../data/data.json';
 
-// mise en place d'une fonction pour l'ouverture du collapse "fiabilité"
+// mise en place d'une fonction pour l'ouverture/fermeture du collapse "fiabilité"
 function openCloseCollapse1() {
   const textFiability = document.getElementById('textFiability');
   const iconOpen = document.getElementById('iconOpen');
@@ -24,7 +24,7 @@ function openCloseCollapse1() {
   }
 }
 
-// mise en place d'une fonction pour l'ouverture du collapse "respect"
+// mise en place d'une fonction pour l'ouverture/fermeture du collapse "respect"
 function openCloseCollapse2() {
   const textRespect = document.getElementById('textRespect');
   const iconOpen = document.getElementById('iconOpen2');
@@ -43,7 +43,7 @@ function openCloseCollapse2() {
   }
 }
 
-// mise en place d'une fonction pour l'ouverture du collapse "Description"
+// mise en place d'une fonction pour l'ouverture/fermeture du collapse "Description"
 function openCloseCollapse3() {
   const textDescription = document.getElementById('textDescription');
   const iconOpen = document.getElementById('iconOpen3');
@@ -61,7 +61,7 @@ function openCloseCollapse3() {
     iconOpen.style.setProperty('display', 'none');
   }
 }
-// mise en place d'une fonction pour l'ouverture du collapse "Equipement"
+// mise en place d'une fonction pour l'ouverture/fermeture du collapse "Equipements"
 function openCloseCollapse4() {
   const textEquipements = document.getElementById('textEquipements');
   const iconOpen = document.getElementById('iconOpen4');
@@ -79,7 +79,7 @@ function openCloseCollapse4() {
     iconOpen.style.setProperty('display', 'none');
   }
 }
-
+// création des collapse pour la page logement
 export default function CollapseLoc() {
   return (
     <div>
@@ -88,6 +88,7 @@ export default function CollapseLoc() {
         (data) =>
           data.id ===
           window.location.href.split('http://localhost:3000/Logement/').join('')
+        // map sur les datas filtrés
       ).map((data) => {
         return (
           <div className={styles.collapseList} key={data.id}>
@@ -139,6 +140,7 @@ export default function CollapseLoc() {
                 <div className={styles.collapseOpen} id="textEquipements">
                   <ul>
                     {data.equipments.map((equipment) => {
+                      // map sur les équipements pour un listing
                       return <li key={equipment}>{equipment}</li>;
                     })}
                   </ul>
