@@ -7,7 +7,7 @@ import Ratings from './Rating.js';
 
 export default function Informations() {
   return (
-    <div>
+    <div className={styles.informations}>
       {Datas.filter(
         // filtre sur l'id en fonction de l'url
         (data) =>

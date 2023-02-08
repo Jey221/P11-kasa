@@ -1,4 +1,8 @@
 /* ZONE INFOS */
+.informations {
+  width: 78vw;
+  margin: 0% auto;
+}
 .infosZone {
   display: flex;
   justify-content: space-between;
@@ -12,6 +16,7 @@
   color: rgb(255, 96, 96, 1);
 }
 .titleZone h1 {
+  font-size: 1.5em;
   font-weight: 500;
   margin-top: 0%;
   margin-bottom: 1%;
@@ -23,9 +28,11 @@
   margin-top: 0%;
 }
 .locationZone h2 {
+  font-size: 1em;
   font-weight: 500;
 }
 .tagZone {
+  margin-top: 6vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -54,24 +61,25 @@
   gap: 5%;
 }
 .name {
-  width: 114px;
+  width: 8vw;
 }
 .name h2 {
   color: rgb(255, 96, 96, 1);
   font-weight: 200;
-  font-size: 24px;
+  font-size: 1.3em;
   margin: 0;
   text-align: end;
 }
 .image img {
   border-radius: 50%;
-  width: 70px;
+  width: 68px;
 }
 /* BLOC RANKING */
 .ratingZone {
-  margin-top: 8%;
+  margin-top: 4vh;
 }
 .stars {
+  gap: 1vw;
   display: flex;
   justify-content: space-between;
   align-items: center;

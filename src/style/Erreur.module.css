@@ -1,15 +1,15 @@
 .errorPage {
-  margin-bottom: 10%;
-  margin-top: 10%;
+  margin-bottom: 6%;
+  margin-top: 7%;
 }
 .errorPage h1 {
-  font-size: 288px;
+  font-size: 35vh;
   color: rgba(255, 96, 96, 1);
   margin: 0;
 }
 .errorPage h2 {
   color: rgba(255, 96, 96, 1);
-  margin-bottom: 13%;
+  margin-bottom: 7%;
 }
 .errorPage a {
   color: rgba(255, 96, 96, 1);

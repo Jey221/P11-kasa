@@ -3,32 +3,32 @@
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: rgb(246, 246, 246, 1);
-  width: 94%;
+  width: 157vh;
   border-radius: 10px;
   margin: auto;
-  margin-top: 2%;
-  margin-bottom: 1%;
-  padding-top: 3%;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  padding-top: 3vh;
 }
 .gallery a {
   text-decoration: none;
 }
 .logement {
-  margin: 10px;
+  margin: 3vh;
 }
 .logement h2 {
-  font-size: 18px;
+  font-size: 2vh;
   position: absolute;
-  max-width: 340px;
+  max-width: 30vh;
   text-align: left;
-  padding: 0% 1%;
+  padding: 0vh 2vh;
 }
 .card {
   display: flex;
   align-items: flex-end;
   color: white;
-  width: 340px;
-  height: 340px;
+  width: 42vh;
+  height: 42vh;
   border-radius: 10px;
   background-position: center;
   opacity: 0.5;
@@ -37,8 +37,8 @@
   display: flex;
   align-items: flex-end;
   color: white;
-  width: 340px;
-  height: 340px;
+  width: 42vh;
+  height: 42vh;
   border-radius: 10px;
   background-position: center;
   background: linear-gradient(181deg, rgb(255 255 255) 0%, rgb(0 0 0) 100%);

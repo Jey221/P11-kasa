@@ -1,9 +1,11 @@
 .header {
+  margin: auto;
+  margin-top: 2vh;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 1% 4%;
+  align-items: center;
+  width: 157vh;
 }
 .header img {
-  margin: 1% 0%;
+  margin: 1vh;
 }

@@ -165,7 +165,7 @@ export default function CollapseLoc() {
                     />
                   </span>
                 </div>
-                <div className={styles.collapseOpen} id="textFiability">
+                <div className={styles.collapseOpenDown} id="textFiability">
                   <div>
                     <p>
                       Les annonces postées sur Kasa garantissent une fiabilité
@@ -195,7 +195,7 @@ export default function CollapseLoc() {
                     />
                   </span>
                 </div>
-                <div className={styles.collapseOpen} id="textRespect">
+                <div className={styles.collapseOpenDown} id="textRespect">
                   <div>
                     <p>
                       La bienveillance fait partie des valeurs fondatrices de

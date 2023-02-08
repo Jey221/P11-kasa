@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 94%;
-  height: 212px;
+  width: 157vh;
+  height: 27vh;
   border-radius: 25px;
-  margin: 2% auto;
+  margin: 2vh auto;
   background: url(../assets/IMG.png);
   background-position: 0% 87%;
   background-size: 100%;
@@ -15,10 +15,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 94%;
-  height: 212px;
+  width: 157vh;
+  height: 27vh;
   border-radius: 25px;
-  margin: 2% auto;
+  margin: 2vh auto;
   background: url(../assets/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png);
   background-position: 0% 87%;
   background-size: 100%;
@@ -26,6 +26,12 @@
 }
 
 .banner h1 {
-  font-size: 40px;
+  font-size: 6vh;
+  font-weight: 500;
   color: white;
+}
+@media (max-width: 425px) {
+  .banner h1 {
+    color: black;
+  }
 }

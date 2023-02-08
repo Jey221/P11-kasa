@@ -7,7 +7,7 @@ export default function Banner() {
   return (
     // mise en place condition selon la page où se situe l'utilisateur
     <div>
-      {window.location.href === 'http://localhost:3000/APropos' ? (
+      {window.location.href === 'http://localhost:3000/About' ? (
         <div className={styles.banner2}></div> // bannière 2 pour page à propos
       ) : (
         <div className={styles.banner}>

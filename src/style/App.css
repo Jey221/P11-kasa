@@ -1,10 +1,6 @@
 .App {
   text-align: center;
 }
-.h1 {
-  color: red;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -21,7 +17,7 @@
 }
 
 .navigation {
-  width: 25%;
+  width: 32vh;
 }
 .navHeader {
   display: flex;
@@ -31,11 +27,11 @@
 .desactive {
   color: rgba(255, 96, 96, 1);
   text-decoration: none;
-  font-size: 24px;
+  font-size: 3vh;
 }
 .active {
   color: rgba(255, 96, 96, 1);
   text-decoration: none;
-  font-size: 24px;
-  border-bottom: solid 3px rgba(255, 96, 96, 1);
+  font-size: 3vh;
+  border-bottom: solid 0.3vh rgba(255, 96, 96, 1);
 }

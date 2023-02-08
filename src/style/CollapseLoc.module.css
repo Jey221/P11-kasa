@@ -1,7 +1,8 @@
 /* COLLAPSE LOGEMENT*/
 .collapseList {
-  margin-bottom: 15%;
-  margin-top: 1%;
+  width: 72vw;
+  margin: auto;
+  margin-top: 4vh;
   padding: 0% 4%;
 }
 .collapseLoc {
@@ -11,7 +12,7 @@
   gap: 4%;
 }
 .collapseUp {
-  width: 520px;
+  width: 45vw;
   border-radius: 5px;
 }
 .collapseUp .collapseClose h2 {
@@ -21,14 +22,15 @@
 }
 .collapse {
   margin: 3% 0;
-  width: 1023px;
+  width: 72vw;
   border-radius: 5px;
 }
 .collapseClose {
+  height: 2vh;
   background: rgba(255, 96, 96, 1);
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 2vh 2vh;
   align-items: center;
   font-size: 24px;
   border-radius: 5px;
@@ -36,10 +38,11 @@
 }
 .collapseClose h2 {
   color: white;
-  font-size: 24px;
-  margin: 1%;
+  font-size: 1em;
+  font-weight: 100;
 }
-.collapseOpen {
+.collapseOpen,
+.collapseOpenDown {
   display: none;
   background: rgba(246, 246, 246, 1);
   text-align: start;
@@ -50,19 +53,25 @@
 .collapseOpen p {
   color: rgba(255, 96, 96, 1);
   margin: 0;
-  font-size: 18px;
   line-height: 150%;
+}
+.collapseOpenDown p {
+  color: rgba(255, 96, 96, 1);
+  margin: 0;
+  line-height: 150%;
+  font-size: 1.4em;
 }
 .collapseOpen ul {
   color: rgba(255, 96, 96, 1);
   margin: 0;
-  font-size: 18px;
+  padding-left: 0%;
   line-height: 150%;
   list-style-type: none;
 }
 
 .icons {
   color: white;
+  padding-right: 2vh;
 }
 .iconUp {
   display: none;
