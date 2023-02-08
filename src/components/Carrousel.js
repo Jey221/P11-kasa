@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // fonction pour le carrousel
 const Slideshow = () => {
   const [current, setCurrent] = useState(0);
+
   return (
     <div className={styles.containerSlide}>
       {Datas.filter(
@@ -32,9 +33,15 @@ const Slideshow = () => {
         return (
           // mise en place du jsx pour le carrousel
           <div className={styles.eachSlide} key={data.id}>
-            <nav className={styles.arrowLeft} onClick={prevButton} id="arrow1">
-              <FontAwesomeIcon icon={faChevronLeft} />
-            </nav>
+            {
+              <nav
+                className={styles.arrowLeft}
+                onClick={prevButton}
+                style={{ display: length <= 1 ? 'none' : 'block' }}
+              >
+                <FontAwesomeIcon icon={faChevronLeft} />
+              </nav>
+            }
             <div className={styles.medias}>
               <img src={data.pictures[current]} alt={data.title} />
             </div>
@@ -43,9 +50,15 @@ const Slideshow = () => {
                 {current + 1}/{data.pictures.length}
               </p>
             </div>
-            <nav className={styles.arrowRight} onClick={nextButton} id="arrow2">
-              <FontAwesomeIcon icon={faChevronRight} />
-            </nav>
+            {
+              <nav
+                className={styles.arrowRight}
+                onClick={nextButton}
+                style={{ display: length <= 1 ? 'none' : 'block' }}
+              >
+                <FontAwesomeIcon icon={faChevronRight} />
+              </nav>
+            }
           </div>
         );
       })}
