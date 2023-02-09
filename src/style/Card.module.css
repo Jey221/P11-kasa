@@ -22,6 +22,7 @@
   max-width: 30vh;
   text-align: left;
   padding: 0vh 2vh;
+  font-weight: 100;
 }
 .card {
   display: flex;
