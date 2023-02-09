@@ -9,3 +9,14 @@
 .header img {
   margin: 1vh;
 }
+/* media Querie smartphone */
+@media (max-width: 425px) {
+  .header {
+    margin-top: 8px;
+    width: 91%;
+  }
+  .header img {
+    width: 37vw;
+    height: 48px;
+  }
+}

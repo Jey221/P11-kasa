@@ -14,3 +14,23 @@
 .errorPage a {
   color: rgba(255, 96, 96, 1);
 }
+@media (max-width: 425px) {
+  .errorPage {
+    margin-bottom: 18%;
+    margin-top: 42%;
+  }
+  .errorPage h1 {
+    font-size: 13vh;
+    margin-bottom: 0%;
+  }
+  .errorPage h2 {
+    font-size: 19px;
+    font-weight: 100;
+    padding: 0% 16%;
+    margin-bottom: 43%;
+  }
+  .errorPage a {
+    font-size: 14px;
+    font-weight: 100;
+  }
+}

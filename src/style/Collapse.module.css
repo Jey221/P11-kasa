@@ -54,13 +54,23 @@
 .iconUpResponsability {
   display: none;
 }
-/* .iconUpRespect {
-  display: none;
+
+@media (max-width: 425px) {
+  .collapseList {
+    margin-bottom: 12vh;
+  }
+  .collapse {
+    margin: 3%;
+    width: 100%;
+  }
+  .collapseClose {
+    padding: 3% 0%;
+  }
+  .collapseClose h2 {
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .collapseOpen p {
+    font-size: 13px;
+  }
 }
-.iconUpService {
-  display: none;
-}
-.iconUpResponsability {
-  display: none;
-}
- */

@@ -45,3 +45,34 @@
   font-size: 13px;
   top: 370px;
 }
+
+@media (max-width: 425px) {
+  .containerSlide {
+    margin-top: 5%;
+    width: 100%;
+    height: 30vh;
+  }
+  .arrowLeft {
+    left: 30px;
+  }
+  .arrowRight {
+    right: 30px;
+  }
+  .arrowLeft svg,
+  .arrowRight svg {
+    width: 5vw;
+  }
+  .medias {
+    height: 30vh;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .medias img {
+    border-radius: 10px;
+    width: 100%;
+    height: 30vh;
+  }
+  .index {
+    display: none;
+  }
+}

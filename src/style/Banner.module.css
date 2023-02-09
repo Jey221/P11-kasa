@@ -12,6 +12,12 @@
   background-size: 100%;
   color: white;
 }
+.banner h1 {
+  font-size: 6vh;
+  font-weight: 500;
+  color: white;
+}
+
 /* Bannière page About */
 .banner2 {
   display: flex;
@@ -27,14 +33,41 @@
   color: white;
 }
 
-.banner h1 {
-  font-size: 6vh;
-  font-weight: 500;
-  color: white;
-}
 /* media Querie smartphone */
 @media (max-width: 425px) {
+  .banner {
+    width: 92%;
+    height: 117px;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../assets/IMG2.png);
+    background-position: -8px 0px;
+    background-size: 102%;
+    background-repeat: no-repeat;
+  }
   .banner h1 {
-    color: black;
+    font-size: 22px;
+    text-align: start;
+    padding: 7% 6%;
+    padding-right: 120px;
+  }
+  /* Bannière page About */
+  .banner2 {
+    width: 92%;
+    height: 224px;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../assets/gustavo-alves-YOXSC4zRcxw-unsplash\ 1.png);
+    background-position: -1px 0px;
+    background-size: 102%;
+    background-repeat: no-repeat;
   }
 }

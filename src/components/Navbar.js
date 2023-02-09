@@ -13,13 +13,13 @@ export default function Navbar() {
           to="/"
           className={location.pathname === '/' ? 'active' : 'desactive'}
         >
-          Accueil
+          ACCUEIL
         </Link>
         <Link
           to="/About"
           className={location.pathname === '/About' ? 'active' : 'desactive'}
         >
-          A Propos
+          A PROPOS
         </Link>
       </nav>
     </div>

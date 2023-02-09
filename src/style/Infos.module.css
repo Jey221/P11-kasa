@@ -84,3 +84,51 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media (max-width: 425px) {
+  .informations {
+    width: 100%;
+  }
+  .infosZone {
+    flex-direction: column;
+  }
+  .titleZone h1 {
+    font-size: 22px;
+  }
+  .locationZone h2 {
+    font-size: 13px;
+  }
+  .tagZone {
+    margin-top: 2vh;
+  }
+  .tag {
+    width: 100px;
+    height: 23px;
+    border-radius: 5px;
+  }
+  .tag p {
+    font-size: 10px;
+  }
+  .blocRight {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+  }
+  .name {
+    width: 21vw;
+  }
+  .name h2 {
+    font-size: 12px;
+  }
+  .image img {
+    width: 47px;
+  }
+  .ratingZone {
+    margin-top: 0;
+  }
+  .stars img {
+    width: 19px;
+  }
+}

@@ -17,7 +17,7 @@
 }
 /* gestion de la mise en forme pour le composant navigation */
 .navigation {
-  width: 32vh;
+  width: 289px;
 }
 .navHeader {
   display: flex;
@@ -27,11 +27,25 @@
 .desactive {
   color: rgba(255, 96, 96, 1);
   text-decoration: none;
-  font-size: 3vh;
+  font-size: 1.3em;
 }
 .active {
   color: rgba(255, 96, 96, 1);
   text-decoration: none;
-  font-size: 3vh;
+  font-size: 1.3em;
   border-bottom: solid 0.3vh rgba(255, 96, 96, 1);
+}
+
+/* media Querie smartphone */
+@media (max-width: 425px) {
+  .App {
+    width: 100%;
+  }
+  .navigation {
+    width: 140px;
+  }
+  .navHeader a {
+    font-size: 12px;
+    font-weight: 100;
+  }
 }
