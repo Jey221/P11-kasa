@@ -83,19 +83,15 @@
     padding: 0%;
   }
   .collapseLoc {
-    display: flex;
     align-items: center;
     flex-direction: column;
   }
   .collapseUp {
     width: 92%;
-    border-radius: 5px;
     margin-top: 6%;
   }
   .collapseUp .collapseClose h2 {
     font-size: 14px;
-    font-weight: 100;
-    padding: 1%;
   }
   .collapseLocBis {
     display: flex;
@@ -105,26 +101,19 @@
   }
   .collapse {
     width: 92%;
-    border-radius: 5px;
     margin-top: 6%;
+    margin-bottom: 0%;
   }
   .collapseClose {
     padding: 3% 1vh;
     font-size: 18px;
   }
   .collapseClose h2 {
-    color: white;
     font-size: 14px;
-    font-weight: 100;
   }
   .collapseOpen,
   .collapseOpenDown {
-    text-align: start;
     padding: 16px 15px;
-    margin-top: -1%;
-  }
-  .collapseOpen p {
-    margin: 0;
   }
   .collapseOpenDown p {
     font-size: 17px;
