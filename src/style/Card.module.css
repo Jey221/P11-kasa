@@ -65,6 +65,7 @@
     height: 260px;
   }
   .logement h2 {
+    font-size: 1.4em;
     font-weight: 100;
   }
 }

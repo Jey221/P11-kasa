@@ -47,5 +47,6 @@
   .navHeader a {
     font-size: 12px;
     font-weight: 100;
+    text-transform: uppercase;
   }
 }
