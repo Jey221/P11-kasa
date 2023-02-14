@@ -3,7 +3,6 @@
   width: 72vw;
   margin: auto;
   margin-top: 4vh;
-  padding: 0% 4%;
 }
 .collapseLoc {
   display: flex;
@@ -87,7 +86,7 @@
     flex-direction: column;
   }
   .collapseUp {
-    width: 92%;
+    width: 98%;
     margin-top: 6%;
   }
   .collapseUp .collapseClose h2 {
@@ -100,7 +99,7 @@
     margin-bottom: 10%;
   }
   .collapse {
-    width: 92%;
+    width: 98%;
     margin-top: 6%;
     margin-bottom: 0%;
   }

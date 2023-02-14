@@ -5,9 +5,8 @@
   background-color: rgb(246, 246, 246, 1);
   width: 157vh;
   border-radius: 10px;
-  margin: auto;
-  margin-top: 3vh;
-  margin-bottom: 2vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   padding-top: 3vh;
 }
 .gallery a {
@@ -56,16 +55,16 @@
     margin: 0%;
   }
   .cardBack {
-    width: 345px;
-    height: 260px;
+    width: 89vw;
+    height: 54vh;
     margin: 3% 0%;
   }
   .card {
-    width: 345px;
-    height: 260px;
+    width: 89vw;
+    height: 54vh;
   }
   .logement h2 {
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: 100;
   }
 }

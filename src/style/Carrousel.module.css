@@ -1,7 +1,9 @@
 .containerSlide {
-  margin: 1% auto;
-  width: 80vw;
+  margin-left: -4%;
+  width: 78vw;
   height: 50vh;
+  margin-bottom: 1%;
+  margin-top: 2%;
 }
 .eachSlide {
   display: flex;
@@ -42,15 +44,15 @@
   position: absolute;
   color: white;
   font-weight: 500;
-  font-size: 13px;
-  top: 370px;
+  font-size: 16px;
+  top: 481px;
 }
 
 @media (max-width: 425px) {
   .containerSlide {
     margin-top: 5%;
-    width: 100%;
-    height: 30vh;
+    width: 110%;
+    height: 47vh;
   }
   .arrowLeft {
     left: 30px;
@@ -63,14 +65,14 @@
     width: 5vw;
   }
   .medias {
-    height: 30vh;
+    height: 47vh;
     width: 100%;
     border-radius: 10px;
   }
   .medias img {
     border-radius: 10px;
     width: 100%;
-    height: 30vh;
+    height: 47vh;
   }
   .index {
     display: none;

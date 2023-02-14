@@ -5,7 +5,7 @@ import About from './pages/About';
 import Logement from './pages/Logement';
 import Erreur from './pages/Erreur';
 import Header from './components/Header';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 
 // mise en place de l'application et des différentes routes
 // mise en place des composants Header et Footer présent sur l'ensemble de l'app
@@ -19,7 +19,6 @@ function App() {
         <Route exact path="/Logement/:idLogement" element={<Logement />} />
         <Route path="*" element={<Erreur />} />
       </Routes>
-      <Footer />
     </div>
   );
 }

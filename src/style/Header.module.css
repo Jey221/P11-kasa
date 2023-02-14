@@ -1,5 +1,4 @@
 .header {
-  margin: auto;
   margin-top: 2vh;
   display: flex;
   justify-content: space-between;
@@ -12,11 +11,9 @@
 /* media Querie smartphone */
 @media (max-width: 425px) {
   .header {
-    margin-top: 8px;
-    width: 91%;
+    width: auto;
   }
   .header img {
     width: 37vw;
-    height: 48px;
   }
 }

@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin: auto;
+  width: 73%;
 }
 .App-header {
   background-color: #282c34;
@@ -39,7 +41,8 @@
 /* media Querie smartphone */
 @media (max-width: 425px) {
   .App {
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
   .navigation {
     width: 140px;
