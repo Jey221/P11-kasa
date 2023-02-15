@@ -47,7 +47,7 @@ const Slideshow = () => {
               <img src={data.pictures[current]} alt={data.title} />
             </div>
             <div className={styles.index}>
-              <p>
+              <p style={{ visibility: length <= 1 ? 'hidden' : '' }}>
                 {current + 1}/{data.pictures.length}
               </p>
             </div>
