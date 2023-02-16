@@ -8,7 +8,7 @@ import Erreur from './Erreur';
 
 // création de la page Logement et récupération de différents composants
 export default function Logement() {
-  //vérification de l'id dans l'url en fonction des datas
+  //vérification de l'id dans l'url pour voir si il existe dans le back-end
   const isfound = Datas.some((data) => {
     if (
       window.location.href.split('http://localhost:3000/Logement/').join('') ===

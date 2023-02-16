@@ -5,7 +5,6 @@ import About from './pages/About';
 import Logement from './pages/Logement';
 import Erreur from './pages/Erreur';
 import Header from './components/Header';
-// import Footer from './components/Footer';
 
 // mise en place de l'application et des différentes routes
 // mise en place des composants Header et Footer présent sur l'ensemble de l'app
