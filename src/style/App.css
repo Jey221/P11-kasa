@@ -19,7 +19,7 @@
 }
 /* gestion de la mise en forme pour le composant navigation */
 .navigation {
-  width: 289px;
+  width: 25%;
 }
 .navHeader {
   display: flex;

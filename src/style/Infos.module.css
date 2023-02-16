@@ -110,7 +110,7 @@
     border-radius: 5px;
   }
   .tag p {
-    font-size: 10px;
+    font-size: 0.5em;
   }
   .blocRight {
     display: flex;
