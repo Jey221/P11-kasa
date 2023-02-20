@@ -41,7 +41,7 @@ export default function Logement() {
         // map sur les datas filtrés
       ).map((data) => {
         return (
-          <div className="collapseUp">
+          <div className="collapseUp" key={data.id}>
             <Collapse
               title={'Description'}
               content={data.description}
@@ -55,14 +55,16 @@ export default function Logement() {
           </div>
         );
       })}
-      <div className="collapseDown">
+      <div>
         {[aboutData[0], aboutData[1]].map((data) => {
           return (
-            <Collapse
-              title={data.name}
-              content={data.content}
-              type={'paragraph'}
-            />
+            <div className="collapseDown" key={data.name}>
+              <Collapse
+                title={data.name}
+                content={data.content}
+                type={'paragraph'}
+              />
+            </div>
           );
         })}
       </div>
