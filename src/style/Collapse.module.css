@@ -57,6 +57,7 @@
 
 @media (max-width: 425px) {
   .collapseList {
+    padding: 0%;
     margin-bottom: 12vh;
   }
   .collapse {
