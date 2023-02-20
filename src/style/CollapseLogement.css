@@ -1,0 +1,58 @@
+.main {
+  margin-bottom: 12%;
+}
+.collapseUp {
+  display: flex;
+  margin-top: 3%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2%;
+  width: 100%;
+}
+.Collapse {
+  margin-bottom: 3%;
+  width: 57vw;
+  border-radius: 5px;
+}
+.CollapseHeader {
+  height: 2vh;
+  background: rgba(255, 96, 96, 1);
+  display: flex;
+  justify-content: space-between;
+  padding: 3vh 1vh;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 5px;
+  position: sticky;
+}
+.CollapseHeader h3 {
+  color: white;
+  font-size: 18px;
+  margin: 1%;
+  font-weight: 400;
+}
+.CollapseHeader svg {
+  padding-right: 3vh;
+  color: white;
+}
+.CollapseContent {
+  background: rgba(246, 246, 246, 1);
+  text-align: start;
+  padding: 34px 15px;
+  border-radius: 5px;
+  margin-top: -1%;
+}
+.CollapseContent p {
+  color: rgba(255, 96, 96, 1);
+  margin: 0;
+  font-size: 18px;
+  line-height: 150%;
+}
+.CollapseContent ul {
+  color: rgba(255, 96, 96, 1);
+  margin: 0;
+  padding-left: 0%;
+  line-height: 150%;
+  list-style-type: none;
+  font-size: 18px;
+}

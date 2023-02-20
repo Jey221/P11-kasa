@@ -4,6 +4,7 @@ import styles from '../style/CollapseLoc.module.css';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Datas from '../data/data.json';
+import { useLocation } from 'react-router-dom';
 
 // mise en place d'une fonction pour l'ouverture/fermeture du collapse "fiabilité"
 function openCloseCollapse1() {
@@ -79,138 +80,150 @@ function openCloseCollapse4() {
     iconOpen.style.setProperty('display', 'none');
   }
 }
+
 // création des collapse pour la page logement
 export default function CollapseLoc() {
-  return (
-    <div>
-      {Datas.filter(
-        // filtre sur l'id en fonction de l'url
-        (data) =>
-          data.id ===
-          window.location.href.split('http://localhost:3000/Logement/').join('')
-        // map sur les datas filtrés
-      ).map((data) => {
-        return (
-          <div className={styles.collapseList} key={data.id}>
-            <div className={styles.collapseLoc}>
-              <div className={styles.collapseUp}>
-                <div
-                  className={styles.collapseClose}
-                  onClick={openCloseCollapse3}
-                >
-                  <h2>Description</h2>
-                  <span className={styles.icons}>
-                    <FontAwesomeIcon
-                      icon={faChevronDown}
-                      id="iconClose3"
-                      className={styles.iconDown}
-                    />
-                    <FontAwesomeIcon
-                      icon={faChevronUp}
-                      id="iconOpen3"
-                      className={styles.iconUp}
-                    />
-                  </span>
+  const url = useLocation();
+  console.log(url);
+  console.log(Datas.id);
+  console.log(url.pathname === `/Logement/${Datas.id}`);
+  if (url.pathname === '/Logement') {
+    return (
+      <div>
+        {Datas.filter(
+          // filtre sur l'id en fonction de l'url
+          (data) =>
+            data.id ===
+            window.location.href
+              .split('http://localhost:3000/Logement/')
+              .join('')
+          // map sur les datas filtrés
+        ).map((data) => {
+          return (
+            <div className={styles.collapseList} key={data.id}>
+              <div className={styles.collapseLoc}>
+                <div className={styles.collapseUp}>
+                  <div
+                    className={styles.collapseClose}
+                    onClick={openCloseCollapse3}
+                  >
+                    <h2>Description</h2>
+                    <span className={styles.icons}>
+                      <FontAwesomeIcon
+                        icon={faChevronDown}
+                        id="iconClose3"
+                        className={styles.iconDown}
+                      />
+                      <FontAwesomeIcon
+                        icon={faChevronUp}
+                        id="iconOpen3"
+                        className={styles.iconUp}
+                      />
+                    </span>
+                  </div>
+                  <div className={styles.collapseOpen} id="textDescription">
+                    <div>
+                      <p>{data.description}</p>
+                    </div>
+                  </div>
                 </div>
-                <div className={styles.collapseOpen} id="textDescription">
-                  <div>
-                    <p>{data.description}</p>
+                <div className={styles.collapseUp}>
+                  <div
+                    className={styles.collapseClose}
+                    onClick={openCloseCollapse4}
+                  >
+                    <h2>Équipements</h2>
+                    <span className={styles.icons}>
+                      <FontAwesomeIcon
+                        icon={faChevronDown}
+                        id="iconClose4"
+                        className={styles.iconDown}
+                      />
+                      <FontAwesomeIcon
+                        icon={faChevronUp}
+                        id="iconOpen4"
+                        className={styles.iconUp}
+                      />
+                    </span>
+                  </div>
+                  <div className={styles.collapseOpen} id="textEquipements">
+                    <ul>
+                      {data.equipments.map((equipment) => {
+                        // map sur les équipements pour un listing
+                        return <li key={equipment}>{equipment}</li>;
+                      })}
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div className={styles.collapseUp}>
-                <div
-                  className={styles.collapseClose}
-                  onClick={openCloseCollapse4}
-                >
-                  <h2>Équipements</h2>
-                  <span className={styles.icons}>
-                    <FontAwesomeIcon
-                      icon={faChevronDown}
-                      id="iconClose4"
-                      className={styles.iconDown}
-                    />
-                    <FontAwesomeIcon
-                      icon={faChevronUp}
-                      id="iconOpen4"
-                      className={styles.iconUp}
-                    />
-                  </span>
+              <div className={styles.collapseLocBis}>
+                <div className={styles.collapse}>
+                  <div
+                    className={styles.collapseClose}
+                    onClick={openCloseCollapse1}
+                  >
+                    <h2>Fiabilité</h2>
+                    <span className={styles.icons}>
+                      <FontAwesomeIcon
+                        icon={faChevronDown}
+                        id="iconClose"
+                        className={styles.iconDown}
+                      />
+                      <FontAwesomeIcon
+                        icon={faChevronUp}
+                        id="iconOpen"
+                        className={styles.iconUp}
+                      />
+                    </span>
+                  </div>
+                  <div className={styles.collapseOpenDown} id="textFiability">
+                    <div>
+                      <p>
+                        Les annonces postées sur Kasa garantissent une fiabilité
+                        totale. Les photos sont conformes aux logements, et
+                        toutes les informations sont régulièrement vérifiées par
+                        nos équipes.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className={styles.collapseOpen} id="textEquipements">
-                  <ul>
-                    {data.equipments.map((equipment) => {
-                      // map sur les équipements pour un listing
-                      return <li key={equipment}>{equipment}</li>;
-                    })}
-                  </ul>
+                <div className={styles.collapse}>
+                  <div
+                    className={styles.collapseClose}
+                    onClick={openCloseCollapse2}
+                  >
+                    <h2>Respect</h2>
+                    <span className={styles.icons}>
+                      <FontAwesomeIcon
+                        icon={faChevronDown}
+                        id="iconClose2"
+                        className={styles.iconDown}
+                      />
+                      <FontAwesomeIcon
+                        icon={faChevronUp}
+                        id="iconOpen2"
+                        className={styles.iconUp}
+                      />
+                    </span>
+                  </div>
+                  <div className={styles.collapseOpenDown} id="textRespect">
+                    <div>
+                      <p>
+                        La bienveillance fait partie des valeurs fondatrices de
+                        Kasa. Tout comportement discriminatoire ou de
+                        perturbation du voisinage entraînera une exclusion de
+                        notre plateforme.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className={styles.collapseLocBis}>
-              <div className={styles.collapse}>
-                <div
-                  className={styles.collapseClose}
-                  onClick={openCloseCollapse1}
-                >
-                  <h2>Fiabilité</h2>
-                  <span className={styles.icons}>
-                    <FontAwesomeIcon
-                      icon={faChevronDown}
-                      id="iconClose"
-                      className={styles.iconDown}
-                    />
-                    <FontAwesomeIcon
-                      icon={faChevronUp}
-                      id="iconOpen"
-                      className={styles.iconUp}
-                    />
-                  </span>
-                </div>
-                <div className={styles.collapseOpenDown} id="textFiability">
-                  <div>
-                    <p>
-                      Les annonces postées sur Kasa garantissent une fiabilité
-                      totale. Les photos sont conformes aux logements, et toutes
-                      les informations sont régulièrement vérifiées par nos
-                      équipes.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.collapse}>
-                <div
-                  className={styles.collapseClose}
-                  onClick={openCloseCollapse2}
-                >
-                  <h2>Respect</h2>
-                  <span className={styles.icons}>
-                    <FontAwesomeIcon
-                      icon={faChevronDown}
-                      id="iconClose2"
-                      className={styles.iconDown}
-                    />
-                    <FontAwesomeIcon
-                      icon={faChevronUp}
-                      id="iconOpen2"
-                      className={styles.iconUp}
-                    />
-                  </span>
-                </div>
-                <div className={styles.collapseOpenDown} id="textRespect">
-                  <div>
-                    <p>
-                      La bienveillance fait partie des valeurs fondatrices de
-                      Kasa. Tout comportement discriminatoire ou de perturbation
-                      du voisinage entraînera une exclusion de notre plateforme.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
+          );
+        })}
+      </div>
+    );
+  } else {
+    console.log('no');
+  }
 }

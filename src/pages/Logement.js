@@ -1,10 +1,12 @@
 // mise  en place de la page logement
 import React from 'react';
 import Slideshow from '../components/Carrousel';
-import CollapseLoc from '../components/CollapseLoc';
+import Collapse from '../components/Collapse';
 import Informations from '../components/Infos';
 import Datas from '../data/data.json';
 import Erreur from './Erreur';
+import aboutData from '../data/aboutData.json';
+import '../style/CollapseLogement.css';
 
 // création de la page Logement et récupération de différents composants
 export default function Logement() {
@@ -28,10 +30,50 @@ export default function Logement() {
   }
   // création de la page Logement et récupération des composants Slideshow, Informations et CollapseLoc
   return (
-    <div>
+    <div className="main">
       <Slideshow />
       <Informations />
-      <CollapseLoc />
+      {Datas.filter(
+        // filtre sur l'id en fonction de l'url
+        (data) =>
+          data.id ===
+          window.location.href.split('http://localhost:3000/Logement/').join('')
+        // map sur les datas filtrés
+      ).map((data) => {
+        return (
+          <div className="collapseUp">
+            <Collapse
+              title={'Description'}
+              content={data.description}
+              type={'paragraph'}
+            />
+            <Collapse
+              title={'Équipements'}
+              content={data.equipments}
+              type={'list'}
+            />
+          </div>
+        );
+      })}
+      <div className="collapseDown">
+        {[aboutData[0], aboutData[1]].map((data) => {
+          return (
+            <Collapse
+              title={data.name}
+              content={data.content}
+              type={'paragraph'}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
+
+/* 
+{aboutData.map(({ name, content }, index) => (
+  <div key={`${name}-${index}`}>
+    <Collapse title={name} content={content} type={'paragraph'} />
+  </div>
+))}
+ */
