@@ -15,6 +15,7 @@ export default function About() {
         </div>
         <section className="about">
           {aboutData.map(({ name, content }, index) => (
+            // mise en place des collapse sur la page
             <div key={`${name}-${index}`}>
               <Collapse title={name} content={content} type={'paragraph'} />
             </div>

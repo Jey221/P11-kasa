@@ -4,9 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import styles from '../style/CollapseLoc.module.css';
 
 function Collapse({ title, content, type }) {
+  // mise en place d'un Hook d'état pour l'ouverture et la fermeture des col
   const [isOpen, setIsOpen] = useState(false);
 
   return isOpen ? (
+    // collapse ouvert
     <article className="Collapse">
       <div className="CollapseHeader" onClick={() => setIsOpen(false)}>
         <h3>{title}</h3>
@@ -18,6 +20,7 @@ function Collapse({ title, content, type }) {
       </div>
       <div className="CollapseContent">
         {type === 'paragraph' ? (
+          // condition sur le contenu du collapse soit paragraphe soit liste non ordonnée
           <p>{content}</p>
         ) : (
           <ul>
@@ -29,6 +32,7 @@ function Collapse({ title, content, type }) {
       </div>
     </article>
   ) : (
+    // collapse fermer
     <article className="Collapse">
       <div className="CollapseHeader" onClick={() => setIsOpen(true)}>
         <h3>{title}</h3>
